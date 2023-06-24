@@ -1,0 +1,113 @@
+:root {
+    --primary: #1a3e82;
+    --bg: #395485;
+  }
+  
+  *I {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration-line: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: rgb(5, 5, 5);
+  }
+  
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(253, 172, 8); 0.8);
+    border-bottom: 1px solid rgb(253, 127, 8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffff;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: #1a3e82;
+  }
+  
+  .navbar .navbar-nav a {
+      color: #ffff;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.2rem;
+      margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+      color: var(--primary) ;
+  }
+  .navbar .navbar-nav a::after {
+      content: '';
+      display: block;
+      padding-bottom: 0.5rem;
+      border-bottom: 0.1rem solid var(--primary);
+      transform: scale(0);
+  }
+  
+  .navbar .navbar-nav a:hover::after{
+      transform: scale(0.5);
+  }
+  .navbar .navbar-extra a {
+      color: #1a3e82;
+      margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+      color: #ffff;
+  }
+  
+  /* Hero section */
+  .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background-image: url(motorlogo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+  }
+  
+  
+  /* Media Queries */
+  
+  /* Laptop */
+  @media (max-width: 1000px) {
+      html {
+          font-size: 75%;
+      }
+  }
+  
+  /* Tablet */
+  @media (max-width: 758px){
+      html {
+          font-size: 62.5%;
+      }
+  }
+  /* Phone */
+  @media (max-width: 450px) {
+      html {
+          font-size: 55%;
+      }
+  }
+  
