@@ -1,0 +1,68 @@
+<html>
+<meta name="viewport" content="widht-device-width, initial-scale-1">
+<link rel="stylesheet" href="style1.css">
+<body>
+
+<img src="logo1.jpg" style="width:100%">
+<style>
+body { background-color: #1a3e82; }
+</style>
+</body>
+
+<div class=" w3- bar w3-container w3-red">
+	<font color="white">
+<a href="index.html" class="w3-button">HOME</a>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MATIC')">MATIC</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'BEBEK')">BEBEK</button>
+<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'2TAK&SPORT')">2TAK & SPORT</button>
+</font></div>
+
+
+ <div id="MATIC" class="w3-container city w3-animate-bottom" style="display:none">
+ 	<center>
+ <div class="w3-panel w3-white w3-card-4">
+ <img src="14.jpeg" width="100%">
+ <p>
+ <a href="matic.html" class="w3-button w3-dark-blue"><font color="white">Cari Sekarang</font></a>
+<hr>
+</div>
+</p></center></div>
+
+
+ <div id="BEBEK" class="w3-container city w3-animate-buttom" style="display:none">
+ 	<center>
+ <div class="w3-panel w3-white w3-card-4">
+ <img src="B1.jpeg" width="100%">
+ <p>
+<a href="bebek.html" class="w3-button w3-dark-blue"><font color="white">Cari sekarang</font></a>
+ </p>
+ <hr>
+ </div> </div></center>
+
+<div id="2TAK&SPORT" class="w3-container city w3-animate-buttom" style="display:none">
+ 	<center>
+<div class="w3-panel w3-white w3-card-4">
+<img src="T8.jpeg" width="100%">
+<p>
+<a href="2TAK.html" class="w3-button w3-dark-blue"><font color="white">Cari sekarang</font></a>
+</p>
+<hr>
+</div></center>
+ 
+<script>
+function openCity(evt, cityName) {
+ var i, x, tablinks;
+ x = document.getElementsByClassName("city");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < x.length; i++) {
+ tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+ }
+ document.getElementById(cityName).style.display = "block";
+ evt.currentTarget.className += " w3-green";
+}
+</script>
+</body>
+</html>
